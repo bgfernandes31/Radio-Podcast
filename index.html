@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Podcast</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        R<span id="red">a</span><span id="yellow">d</span
+        ><span id="green">i</span><span id="purple">o</span> Podcast
+      </h1>
+      <div>
+        <input
+          readonly
+          disabled
+          type="text"
+          value="87.5 Mhz"
+          id="inputCurrentFrequency"
+        />
+      </div>
+      <div>
+        <input
+          class="format"
+          min="87.5"
+          max="108"
+          step="0.1"
+          value="87.5"
+          type="range"
+          id="rangeFrequencies"
+        />
+      </div>
+      <div class="conteudo">
+        <div class="divPodcast"></div>
+        <div class="audio"></div>
+      </div>
+    </div>
+    <script src="./js/podcast.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
